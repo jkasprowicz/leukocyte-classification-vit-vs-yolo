@@ -1,9 +1,9 @@
 model:
-  name: vit_small_patch16_384
+  name: vit_base_patch16_384
   pretrained: true
 
 training:
-  batch_size: 16
+  batch_size: 16   
   epochs: 50
   learning_rate: 1e-5
   optimizer: adam
