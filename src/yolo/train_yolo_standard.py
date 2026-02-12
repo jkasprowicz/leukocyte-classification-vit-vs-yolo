@@ -2,8 +2,8 @@ import os, shutil
 from sklearn.model_selection import KFold
 from ultralytics import YOLO
 
-all_images = "/lapix/yolo-dataset/visao_computacional.v10-for-yolo.yolov11/all/images"
-all_labels = "/lapix/yolo-dataset/visao_computacional.v10-for-yolo.yolov11/all/labels"
+all_images = "data/standard/images"
+all_labels = "data/standard/labels.csv" 
 
 images = [f for f in os.listdir(all_images) if f.endswith(".jpg")]
 images.sort()
